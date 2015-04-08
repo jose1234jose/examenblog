@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<style type="text/css">
+		.carbonad{display: block;background: #fdfdfd;border: 1px solid #d5d5d5;font-family: Lucida Grande,Arial,sans-serif;font-size: 11px;height: 118px;line-height: 15px;overflow: hidden;;width: 300px}.carbonad-img{border: none;display: inline;float: left;height: 100px;margin: 9px;width: 130px}.carbonad-text{display: inline;float: left;width: 142px;padding-top: 13px}.carbonad-text a{color: #000;text-decoration: none;text-transform: none;}.carbonad-tag{float: left;margin-top: 9px;text-align: center;width: 142px;color: #999}.carbonad-tag a{color: #999}
+		a.gpl-intext-disclosure-text{ text-decoration: none; } a.gpl-intext-disclosure-text:hover { text-decoration: underline; }
+		
+
+		ul.menu
+			{
+				margin-right: 3%;
+				float: right;
+				text-align: right;
+			}
+
+			ul.menudos
+			{
+				margin-right: 10%;
+				float: right;
+				text-align: right;
+			}
+
+			li
+			{
+				padding: 10px;
+				display: inline;
+				list-style-position: none;
+
+			}
+			header
+			{
+				margin-top: -20px;
+				margin-left: -px;
+				width: 100%;
+				height: 30%;
+				background-color: gray;
+			}
+			body
+			{
+				background-color: skyblue;
+			}
+			h1
+			{
+				text-shadow:4px 4px gray;
+			}
+			h3
+			{
+				text-shadow:2px 2px black;
+			}
+
+	</style>
+
+
+</head>
+
+<header>
+		<h3 Bootstrap heading <small>Menu</small>></h3>
+		<ul>
+			<li><a href="http://localhost:3000" class="btn btn-primary btn-lg active" role="button">*Ir_pagina_principal</a></li>
+			<li><a href="http://localhost:3000/posts" class="btn btn-primary btn-lg active" role="button">*Ir_pagina_administrativa</a></li>
+			<li><a href="http://localhost:3000/reportes" class="btn btn-primary btn-lg active" role="button">*Ir_pagina_Reportes</a></li>
+		</ul>
+		<br>
+		<br>
+
+</header>
+<body>
+
+
+
+	<%= yield %>
+
+</body>
+</html>
